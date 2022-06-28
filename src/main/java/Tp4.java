@@ -60,7 +60,7 @@ public class Tp4 {
         client2.setPrenom("Client");
         client2.setBanque(banque);
         client2.setComptes(listeComptes2);
-        client1.setAdresse(adresseC2);
+        client2.setAdresse(adresseC2);
         em.persist(client1);
         em.persist(client2);
         
