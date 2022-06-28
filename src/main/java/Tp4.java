@@ -47,15 +47,14 @@ public class Tp4 {
         adresseC2.setRue("Rue du Code");
         adresseC2.setVille("Codond-les-bois");
         adresseC2.setCodePostal(22222);
-        em.persist(adresseC1);
-        em.persist(adresseC2);
-
+        
         Client client1 = new Client();
         client1.setNom("PREMIER");
         client1.setPrenom("Client");
         client1.setBanque(banque);
         client1.setComptes(listeComptes1);
         client1.setAdresse(adresseC1);
+        
         Client client2 = new Client();
         client2.setNom("SECOND");
         client2.setPrenom("Client");

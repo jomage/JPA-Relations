@@ -1,35 +1,21 @@
 package model;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
 
-@Entity
+@Embeddable
 public class Adresse {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     
     private Integer numero;
     private String rue;
     private Integer codePostal;
     private String ville;
-
-    // Optionnel
-    @OneToOne(mappedBy = "adresse")
-    private Client client;
     
     // Getters & Setters
-
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
+    
     public Integer getNumero() {
         return numero;
     }
